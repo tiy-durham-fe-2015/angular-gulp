@@ -1,0 +1,50 @@
+<div>
+  <h1>Captain Kansas City's Superhero Supply Super Store</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Item
+        </th>
+        <th>
+          Year
+        </th>
+        <th>
+          Owners
+        </th>
+        <th>
+          Item Cost
+        </th>
+        <th>
+          Total Cost
+        </th>
+        <th colspan="6">
+          Remove
+        </th>
+    </thead>
+    <tr ng-repeat="bike in vm.all()">
+      <td ng-click="vm.editBike(bike)">
+        {{bike.name}}
+      </td>
+      <td>
+        {{bike.year}}
+      </td>
+      <td>
+        {{bike.previousOwners}}
+      </td>
+      <td>
+        {{bike.price | currency}}
+      </td>
+      <td>
+        {{bike.total | currency}}
+      </td>
+      <td>
+        <button ng-click="vm.removeBike(bike)">X</button>
+      </td>
+    </tr>
+  </table>
+  <div class="new-deal-content-wrap">
+      <h2>Add New Deal</h2>
+      <a class="new-deal" href="#/bikes/new">+ New Item</a>
+  </div>
+</div>

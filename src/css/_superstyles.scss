@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.4em;
+  background: url(https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xfa1/t31.0-8/220626_10150183543347240_5615882_o.jpg) no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  color: white;
+}
+
+h1 {
+  line-height: 1.3em;
+}
+
+td, th {
+  padding: 0.5em;
+}
+
+tfoot {
+  font-weight: bold;
+}
+
+input, button {
+  font-size: inherit;
+}
+
+/*
+  Hide ng-cloak, so that there isn't a flicker...
+*/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.new-deal-content-wrap {
+  width: 14em;
+  margin: 15% auto;
+  position: relative;
+  text-align: center;
+}
+
+
+.new-deal {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  top: 2em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  opacity: .6;
+  color: white;
+  outline: none;
+  border-style: none;
+  border-radius: 8em;
+  cursor: pointer;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3em;
+}
+
+.sale-input-wrap {
+  width: 45%;
+  margin: 3em auto;
+}
