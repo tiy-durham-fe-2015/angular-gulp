@@ -1,0 +1,43 @@
+<h1>Invoice for <input ng-model="vm.invoice.company"></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        Description
+      </th>
+      <th colspan="2">
+        Cost
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="line in vm.invoice.lineItems">
+      <td>
+        <input ng-model="line.description">
+      </td>
+      <td>
+        <input type="number" ng-model="line.cost">
+      </td>
+      <td>
+        <button ng-click="vm.invoice.deleteLineItem(line)">X</button>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>
+        Total
+      </td>
+      <td>
+        {{vm.invoice.total | currency}}
+      </td>
+      <td>
+        <button ng-click="vm.invoice.addLineItem()">+</button>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
+<button ng-click="vm.doneEditing()">Done</button>
+<button ng-click="vm.cancelEditing()">Cancel</button>

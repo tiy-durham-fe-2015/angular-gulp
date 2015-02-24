@@ -1,0 +1,16 @@
+<div>
+  <table>
+    <tr ng-repeat="invoice in vm.all()">
+      <td>
+        {{invoice.company}}
+      </td>
+      <td>
+        {{invoice.total | currency}}
+      </td>
+      <td>
+        <button ng-click="vm.removeInvoice(invoice)">X</button>
+      </td>
+    </tr>
+  </table>
+  <a href="#/invoices/new">+ New Invoice</a>
+</div>
