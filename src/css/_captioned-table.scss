@@ -1,0 +1,21 @@
+// captioned-table: Table-like display that allows for responsive overrides
+.captioned-table {
+  display: table;
+}
+
+.captioned-table-header-row,
+.captioned-table-row {
+  display: table-row;
+}
+
+.captioned-table-header-cell,
+.captioned-table-cell {
+  display: table-cell;
+  padding: 0.75em;
+  border-bottom: 1px solid #EEE;
+}
+
+.captioned-table-header-cell {
+  text-transform: uppercase;
+  color: #CCC;
+}

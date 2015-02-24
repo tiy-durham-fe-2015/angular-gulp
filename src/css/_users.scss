@@ -1,0 +1,27 @@
+.user-list-item {
+  list-style-type: none;
+  padding: 0.5em;
+  border-bottom: 1px solid #AAA;
+  margin-bottom: 0.5em;
+}
+
+.user-avatar {
+  max-height: 3em;
+  max-width: 3em;
+  border-radius: 3em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+}
+
+.user-detail-profile {
+  border-bottom: 1px solid #AAA;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+
+.user-detail-item {
+  display: block;
+  padding: 0 1em;
+  padding: 0.5em;
+}
